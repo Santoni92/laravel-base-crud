@@ -4,7 +4,9 @@
         <div class="container">
             <span>{{ $comic->title }}</span>
             <p>{{ $comic->description }}</p>
-            <img src="{{ $comic->image }}" alt="">
+            <div>
+                <img src="{{ $comic->image }}" alt="">
+            </div>
             <span>{{ $comic->price }}</span>
             <span>{{ $comic->series }}</span>
             <span>{{ $comic->sale_date }}</span>
