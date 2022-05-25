@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Comic;  //linko il model
+
 class ComicController extends Controller
 {
     /**
