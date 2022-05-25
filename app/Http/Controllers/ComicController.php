@@ -16,7 +16,8 @@ class ComicController extends Controller
     public function index()
     {
         //
-
+        $comics = Comic::all();   //::all() è il metodo statico con il quale prendiamo tutto ciò che si trova nella tabella comics.
+        return view('index',compact('comics'));
     }
 
     /**
