@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    @forelse ($comics as $comic)
-        <div class="container">
+    <div class="container">
+        @forelse ($comics as $comic)
             <span>{{ $comic->title }}</span>
             <p>{{ $comic->description }}</p>
             <div>
@@ -11,8 +11,8 @@
             <span>{{ $comic->series }}</span>
             <span>{{ $comic->sale_date }}</span>
             <span>{{ $comic->type }}</span>
-        </div>
-    @empty
-        non risultano esserci fumetti da visualizzare!!!
-    @endforelse
+        @empty
+            non risultano esserci fumetti da visualizzare!!!
+        @endforelse
+    </div>
 @endsection
