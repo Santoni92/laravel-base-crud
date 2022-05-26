@@ -1,4 +1,4 @@
-<form action="{{ route('comics.store') }}" method="post">
+<form action="{{ route('comics.store') }}" method="POST">
     @csrf
     <label for="title">Title:</label>
     <input type="text" name="title">
