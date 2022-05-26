@@ -12,6 +12,7 @@
             <span>{{ $comic->sale_date }}</span>
             <span>{{ $comic->type }}</span>
             <a href="{{ route('comics.show', $comic->id) }}">Guarda dettaglio</a>
+            <a href="{{ Route('comics.edit', $comic->id) }}">Modifica elemento</a>
         @empty
             non risultano esserci fumetti da visualizzare!!!
         @endforelse
