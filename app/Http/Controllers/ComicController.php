@@ -123,5 +123,7 @@ class ComicController extends Controller
     public function destroy($id)
     {
         //
+        $comic->delete();
+        return redirect()->route('comics.index');
     }
 }
